@@ -1,0 +1,12 @@
+{
+  "builder": {
+    "tokenEnv": "MCP_TOKEN",
+    "tools": "*",
+    "purpose": "Does the work: edits files, commits, writes the handoff."
+  },
+  "reviewer": {
+    "tokenEnv": "MCP_TOKEN_REVIEWER",
+    "tools": ["list_files", "read_file", "search", "git_status", "git_log", "read_handoff", "log_entry"],
+    "purpose": "Reads and reviews. Cannot change files or commit. Can only add handoff log entries."
+  }
+}
